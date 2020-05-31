@@ -30,3 +30,10 @@ html,
   font-family: 'Google Sans Regular';
   font-size:100px;
 }
+
+.add-button {
+  font-family: 'Google Sans Regular';
+  position: absolute;
+  top: 1px;
+  left: 1px;
+}
