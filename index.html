@@ -1,25 +1,45 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Fresh Basket Store</title>
-    <style>
-      @font-face {
-        font-family: Google Sans Regular;
-        src: url(resources/fonts/google_sans_regular.woff2) format('woff2');
+   <head>
+      <title>Fresh Basket Store</title>
+      <style>
+         html,body,#title{
+           height:100%;width:100%;
+         }
+         body{
+           margin:0;
+         }
+         @font-face {
+           font-family: Google Sans Regular;
+           src: url(resources/fonts/google_sans_regular.woff2) format('woff2');
+         }
+         @font-face {
+           font-family: Google Sans Medium;
+           src: url(resources/fonts/google_sans_medium.woff2) format('woff2');
+         }
+         #title{
+           font-family: 'Google Sans Regular';
+           font-size:100px;
+         }
+      </style>
+   </head>
+   <body>
+      <div id="title" onclick=toggle()>Fresh Basket Store</div>
+   </body>
+   <script>
+      var title = document.getElementById("title");
+      background = "#FFFFFF";
+      function toggle(){
+        if (background=="#212121"){
+          title.style.background = "#FFFFFF";
+          title.style.color = "#212121";
+          background = "#FFFFFF";
+        }
+        else{
+          title.style.background = "#212121";
+          title.style.color = "#FFFFFF";
+          background = "#212121";
+        }
       }
-
-      @font-face {
-        font-family: Google Sans Medium;
-        src: url(resources/fonts/google_sans_medium.woff2) format('woff2');
-      }
-
-      #title{
-        font-family: 'Google Sans Regular';
-        font-size:100px;
-      }
-    </style>
-  </head>
-  <body>
-    <div id="title">Fresh Basket Store</div>
-  </body>
+   </script>
 </html>
